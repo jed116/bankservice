@@ -8,4 +8,12 @@ public class BankService {
         int result = summ  * percents[type] / 100;
         return result > limit ? limit : result;
     }
+    public int deposit(int summ){
+        int minSumm = 1000;
+        if (summ < minSumm){
+            return summ;
+        }
+        int percent = 3;
+        return summ + summ*percent/100;
+    }
 }
