@@ -5,7 +5,7 @@ public class BankService {
         }
         int limit = 3000;
         int percents[] = {1, 5, 30};
-        int result = summ  * percents[type] / 100;
+        int result = summ  * percents[type - 1] / 100;
         return result > limit ? limit : result;
     }
     public int deposit(int summ){
