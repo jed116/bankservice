@@ -1,6 +1,9 @@
 public class BankService {
     public int cashback(int summ, int type){
-        if ((type < 1) | (type > 3)){
+        if (type < 1){
+            return 0;
+        }
+        if(type > 3){
             return 0;
         }
         int limit = 3000;
